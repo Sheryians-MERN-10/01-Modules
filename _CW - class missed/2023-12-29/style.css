@@ -1,0 +1,37 @@
+
+.box h1 span {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.box p {
+    margin: 30px 0;
+    color: rgba(136, 118, 96, 0.579);
+    /* text-align: justify; */
+}
+
+.box button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(237, 207, 167, 0.579);
+    border: none;
+    color: rgb(158, 137, 110);
+    font-size: 17px;
+}
+
+.back {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.back1 {
+    width: 200px;
+    height: 200px;
+    /* background: linear-gradient(to bottom right, tomato, rgb(211, 20, 20)); */
+    /* background: radial-gradient(yellow, orange, red); */
+    background-image: url(https://images.unsplash.com/photo-1703747269814-769250ef0568?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

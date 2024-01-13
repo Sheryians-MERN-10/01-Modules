@@ -1,0 +1,27 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: darkgreen;
+
+    /* animation: animationName duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: myAnimation 2s ease-in-out infinite; */
+    left: 0%;
+    position: absolute;
+    /* animation: moveBox 100ms ease 2s 2; */
+    /* animation: moveBox 2s ease 2s 2; */
+    /* animation: moveBox 1s ease 0s 3 forwards;   // last position pe stop hoga */
+    /* animation: moveBox 1s ease 3s 3 backwards;   // source raw position pe stop hoga */
+    animation: moveBox 1s ease 2s 3 both;   // source raw position pe stop hoga
+
+    
+}
+
+@keyframes moveBox{
+    from{
+        left: 30%;
+        
+    }
+    to{
+        left: 80%;
+    }
+}
