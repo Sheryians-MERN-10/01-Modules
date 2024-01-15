@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.bg_image{
+    background:linear-gradient(rgba(0, 0, 0, 0.096),rgba(12, 11, 15, 0.087)),url(wallhaven-nature.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* display: flex; */
+
+}
+
+.menu {
+    display: flex;
+
+}
+
+.left_menu{
+    background-color: rgba(23, 23, 26, 0.324);
+    width: 30%;
+    height: 80px;
+    
+}
+.left_menu h3{
+    font-size: 20px;
+    color: rgba(245, 245, 245, 0.872);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 80px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.right_menu{
+    background-color: rgba(23, 23, 26, 0.324);
+    width: 70%;
+    height: 80px;
+}
+
+.right_menu ul{
+    padding-left: 440px;
+}
+.right_menu ul li{
+    display: inline-block;
+    color:  rgba(245, 245, 245, 0.872);
+    line-height: 80px;
+    font-size: 14px;
+    padding-left: 30px;
+    font-family:  sans-serif;
+    cursor: pointer;
+}
+
+.right_menu ul li:hover{
+    color: rgb(6, 183, 183);
+}
+.left_menu h3:hover{
+    color: rgb(47, 181, 114);
+}
+
+.content{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.content h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(254, 252, 252, 0.925);
+}
+.content h1{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    padding-bottom: 5px;
+    
+}
+.content button{
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border: 2px solid rgba(208, 201, 186, 0.4);
+    color: whitesmoke;
+    background-color:transparent;
+    padding: 5px 22px;
+    
+}
+.content button:hover{
+    color: rgba(26, 89, 105, 0.749);
+    background-color: rgba(220, 203, 236, 0.619);
+}
+
+.content h3{
+    font-size: 20px;
+    color:rgba(254, 252, 252, 0.925);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content h5{
+    font-size: 15px;
+    color: rgb(241, 238, 232);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Tektur:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html, body{
+    height: 100%;
+    width: 100%;    
+}
+.fade-effect-from-bottom{
+    height: 100%;
+    width: 100%;    
+    background: linear-gradient(rgb(255, 255, 255, 0.0), rgba(246, 246, 246, 0.1), rgba(255, 255, 255, 0.9));
+    
+
+    
+    z-index: 3;
+    position: absolute;
+}
+
+.logo{
+    height: 100%;
+    transform: scale(1.2);
+    position: absolute;
+    left: 10%;
+}
+
+.logo-content{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 23%;    
+}
+
+.logo-content p{
+    font-weight: bold;
+    color: gray;
+}
+
+nav{
+    /* background-color: white; */
+background: rgb(243, 243, 243);
+    background: linear-gradient(131deg, rgba(243, 243, 243, 1) 0%, rgba(255, 199, 69, 0.9511281074929971) 83%, rgba(255, 135, 0, 1) 100%);
+    width: 100%;
+    height: 7%;
+
+    position: relative;
+    z-index: 20;
+}
+
+.list-container{
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    list-style: none;    
+    font-family: "Tektur", sans-serif;
+    font-weight: 700;
+
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li{
+    display: inline;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
+    padding: 1rem;
+    
+    cursor: pointer;    
+}
+li:hover{
+    background-color: yellow;
+}
+
+/* ------------------- MAIN CONTAINER -------------- */
+.deities-pic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.pic-blur{
+    filter: blur(0.5rem) brightness(100%) contrast(100%);
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;    
+}
+
+/* --------- MAIN CONTAINER TEXT CONTENT ------- */
+.main-container {
+    height: 93%;
+    width: 100%;
+    z-index: 15;
+    position: relative;
+    font-family: "Roboto Serif", serif;
+}
+
+.text-container{
+    width: 60%;
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: x-large;
+    text-align: center;
+    z-index: 5;    
+}
+.heading-text h2{
+    color: white;
+    -webkit-text-stroke: 1px yellow;    
+}
+
+.heading-text{
+    /* color: rgb(221, 255, 4); */
+    color: gold;
+    font-weight: bold;
+    -webkit-text-stroke: 1px orange;
+    /* background-color: rgba(0,0,0, 0.3); */
+    background: linear-gradient( rgba(0,0,0,0.0001), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    padding: 8px 1rem 2rem 1rem;    
+    border-radius: 8px;
+}
+
+.card{
+    width: 60%;
+    height: 45%;
+    position: absolute;
+    bottom:0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    
+    background-color: rgba(245, 245, 220, 0.87);
+    border-radius: 8px;    
+
+    padding: 2rem;
+    text-align: center;
+    z-index: 10;
+}
+
+.card p{
+    color: gray;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem auto;
+}
+
+a{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 3rem auto;  
+    text-decoration: none;  
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.button-container{
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.buttons{    
+    background-color: purple;
+    color: white;
+    font-size: 1.7rem;
+    padding: 0.7rem 2rem;
+    margin: auto 2rem;
+    display: inline;
+    border-radius: 2rem;
+
+}
+
+.buttons:hover{
+    color: yellow;
+    background-color: blueviolet;
+    transform: scale(1.5);
+}
+.location{
+    z-index: 30;
+
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translateX(-50%);
+    
+    font-size: 1.4rem;        
+    font-family: "Tektur", sans-serif;
+    text-align: center;
+}
+
+.whatsapp{
+    z-index: 22;
+    width: 3rem;
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+
+    animation: bounce 1.5s ease-in-out 0s infinite;
+}
+
+@keyframes bounce{
+    0%{
+      bottom: 10%;  
+    }
+    50%{
+        bottom: 8%;        
+    }
+    100%{
+        bottom: 10%;        
+    }
+}
