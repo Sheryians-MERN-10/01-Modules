@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    object-position: center;
+    position: absolute;
+    z-index: -50;
+}
+
+.main-container{
+    position: relative;    
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0, 0, 0, .3), rgba(0, 0, 0, .7) );
+    border-top: 5px solid rgb(232, 232, 53);
+}
+
+nav{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    margin-top: 1rem;
+        font-size: 1.4rem;
+    /* border: 2px solid red; */
+}
+.left-nav{
+    position: absolute;
+    left: 2%;
+    /* border: 2px solid greenyellow; */
+    height: 100%;
+    width: 14%;    
+}
+
+.left-nav img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    border-radius: 60%;
+    width: 5rem;    
+}
+
+.left-nav p{
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.mid-nav{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 20%;
+    /* border: 2px solid blue; */
+    text-align: center;
+}
+
+.mid-left-nav p{
+    position: absolute;    
+    width: fit-content;
+    top: 50%;    
+    transform: translateY(-50%);
+        
+    /* border: 2px solid red; */
+}
+
+.mid-nav p:nth-child(2){
+    margin-left: 10rem;
+}
+
+.right-nav{
+    position: absolute;
+    width: 25%;
+    height: 100%;    
+    
+    right: 0;    
+    /* border: 2px solid purple; */
+}
+
+.btn-group{
+    position: absolute;     
+    height: 100%;
+    width: 100%;   
+    /* border: 2px solid white; */
+    
+}
+
+.btn{    
+    position: absolute;            
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);    
+    
+    width: 10rem;
+    /* border: 2px solid green; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-1{
+    position: absolute;
+    left: 0;
+}
+.btn-2{
+    border-radius: 5rem;
+    padding: 0.5rem 0.5rem;
+    /* background-color: rgb(37, 32, 32); */
+    background-color: #50a0e0;
+}
+.btn-2:hover{
+    color: black;
+    background-color: white;
+}
+
+.arrow-right{
+    display: inline-block;
+    transform: translateY(0.1rem);
+    transform: translateX(-1rem);
+    width: 0;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all 0.5s;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-2:hover .arrow-right{    
+    transform: scale(1);    
+    width: 1.5rem;    
+}
+/* ------ HERO SECTION   -------  */
+.hero-section{
+    position: absolute;
+    height: 75%;
+    width: 60%;
+    top: 20%;
+    margin-left: 2rem;
+    /* border: 2px solid gold; */
+
+}
+
+.main-heading{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    font-size: 10rem;
+    /* text-align: center; */
+    /* border: 2px solid red; */
+    font-weight: bold;
+}
+.main-heading p{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+.main-heading span{
+    position: absolute;
+    bottom: 0;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+.mid-button{
+    position: absolute;
+    height: 14%;
+    width: 34%;
+    top: 55%;
+       
+    /* border: 2px solid lawngreen; */
+}
+
+.mid-button button{
+    width: 22rem;
+    height: 6rem;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    text-align: left;
+    padding: 0.5rem 3rem;
+    cursor: pointer; 
+}
+
+
+.circular-arrow {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    right: 7%;
+    top: 0;
+    
+    /* transform: translateY(-1.5rem); */
+    /* border-radius: 50%; */
+    /* border: 2px solid red; */
+}
+.circular-arrow i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff555;
+    padding: 1.2rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    outline: none;
+}
+.circular-arrow i:hover{
+    background-color: white;
+    color: black;
+}
+.mid-button button::before{
+    /* transform: scale(0); */
+    width: 0;
+    transform-origin: right;
+    transition: all 0.25s;
+}
+
+.mid-button button:hover{
+    background-color: #fff555;    
+    transform: scale(1);    
+}
+
+.footer{
+    position: absolute;
+    height: 12%;
+    width: 95%;
+    left: 2rem;
+
+    bottom: 8%;
+    /* border: 2px solid wheat; */
+    letter-spacing: 0.1rem;
+}
+
+.left-footer{
+    position: absolute;
+    height: fit-content;
+    width: 25%;    
+    bottom: 0;
+    /* border: 2px solid rebeccapurple; */
+    
+    font-size: 2.2rem;
+}
+.right-footer{
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+    right: 0;
+    
+    font-size: 1.5rem;
+    text-align: right;
+    /* border: 2px solid turquoise; */
+}

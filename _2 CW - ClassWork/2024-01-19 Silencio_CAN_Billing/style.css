@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #f1f0f0;
+}
+.main-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+
+.btn-nav{
+    position: absolute;
+    width: 12%;
+    height: 5%;
+
+    top: 1%;
+    right: 0%;
+    transform: translateX(-10%);
+
+    /* border: 2px solid red; */
+}
+
+.btn-nav button{
+    position: absolute;
+    width: 100%;
+    padding: 0.5rem 0.7rem 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(102, 101, 101);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.btn-nav i{
+    position: absolute;
+    right: 0.7rem;
+    font-size: 1.6rem;
+    top: 0.2rem;
+}
+
+.vertical-txt-box{
+    position: absolute;
+    /* border: 2px solid lawngreen; */
+    height: 100%;
+    width: 4rem;
+
+}
+
+.vertical-txt-box h1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    white-space: nowrap;
+    /* border: 2px solid blueviolet; */
+        
+    font-size: 3rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    /* text-align: center; */
+    text-transform: uppercase;
+    word-wrap: normal;
+}
+
+/* ---------    HERO CONTAINER    -------- */
+
+.hero-container{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    /* border: 2px solid blue; */
+}
+
+.img-cold_Can{
+    position: absolute;    
+    left: 50%;    
+    transform: translate(-50%);
+    top: 5%;
+    /* border: 2px solid red; */
+    height: 40%;
+    animation: moveCan 3s ease-in-out 0s infinite;    
+}
+
+@keyframes moveCan {
+    0%{
+        margin-top: 0%;
+    }
+    50%{
+        margin-top: 2%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+
+.hero-container h1 img{
+    
+    height: 6rem;
+}
+
+/* --------- CONTENT ----------- */
+.main-content{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 53%;
+    left: 0%;
+    
+    /* border: 2px solid red; */
+}
+.left-content{
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translateY(-50%);
+
+    text-align: center;
+    border: 1px solid black;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50% 50% 0 0;
+}
+.mid-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.right-content{
+    position: absolute;
+    top: 50%;
+    right: 18%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+}
+.right-content i{
+    border: 1px solid black;
+    padding: 0.4rem;
+}
+
+/* ---------    FOOTER PARA   --------- */
+.para-content{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 2%;
+    /* border: 1px solid purple;     */
+    
+}
+
+.para{
+    position: absolute;
+    width: 35%;
+    height: 80%;
+
+    /* border: 2px solid green; */
+    text-align: justify;
+    font-size: 1.1rem;
+    color: rgb(76, 76, 76);
+} 
+.para strong{
+    color: black;
+}
+.p1{
+    position: absolute;
+    left: 10%;
+}
+.p2{
+    position: absolute;
+    right: 10%;    
+}

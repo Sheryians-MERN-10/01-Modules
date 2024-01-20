@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;    
+    font-family: sans-serif;
+    color: white;
+}
+.main-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+}
+
+nav{
+    border: 2px solid red;
+}
+
+nav h1{
+    font-size: 3rem;
+    color: white;
+    display: inline-block;
+    border: 2px solid green;
+    width: 49%;
+    
+}
+.btn{
+    border: 2px solid pink;
+    display: inline-block;
+    width: 50%;
+    
+    text-align: right;
+
+}
+nav button{
+    border: 2px solid blue;
+    
+    color: white;
+    background-color: lawngreen;
+    padding: 1rem 2rem;        
+}
+

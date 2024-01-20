@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e75d50;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height:100%;
+}
+
+.main-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #f6f2ea;
+}
+
+.hero{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    border: 2px solid red;
+}
+.hero h1{
+    font-size: 20rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: -1.5rem;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    height: 6%;
+    top: 40%;
+
+    font-size: 1.2rem;
+    border: 2px solid green;
+}
+.left-nav{
+    border: 2px solid blue;
+    width: 50%;
+    height: 100%;
+    /* padding: 1rem 4rem; */
+    text-align: center;
+    font-weight: bold;
+}
+.left-nav span{
+    /* margin: auto 2rem; */
+}
+
+.right-nav{
+    border: 2px solid yellow;
+        
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    top: 0%;      
+}
+
+.right-nav span{
+    position: absolute;
+    
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    
+}
+
+.right-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30%;
+
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
