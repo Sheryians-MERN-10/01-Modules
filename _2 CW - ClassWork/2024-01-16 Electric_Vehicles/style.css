@@ -186,6 +186,11 @@ nav{
     /* border: 2px solid lawngreen; */
 }
 
+.mid-button:hover .circular-arrow i{
+    background-color: white;
+    color: black;
+}
+
 .mid-button button{
     width: 22rem;
     height: 6rem;
@@ -195,6 +200,8 @@ nav{
     text-align: left;
     padding: 0.5rem 3rem;
     cursor: pointer; 
+    border: none;
+    font-weight: bold;
 }
 
 

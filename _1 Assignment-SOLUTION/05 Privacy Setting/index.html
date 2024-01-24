@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Setting</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="nav">
+            <div class="left-nav">
+                Settings &nbsp;>&nbsp; User profile
+            </div>
+            <div class="search-inp">
+                <i class="ri-search-line search-icon"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="right-nav">
+                <i class="ri-notification-3-line"></i>
+                <div class="avatar-container">
+                    <img src="user-avatar-3d-male_lg.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="left-hero">
+                <div class="avatar-box">
+                    <img src="user-avatar-3d-male_lg-removebg.png" alt="" srcset="">
+                </div>
+                <div class="profile-options-box">
+                    <div class="rows row1">
+                        <p> <Strong>User Info</Strong></p>
+                    </div>
+                    <div class="rows row2">
+                        <p>Dashboard</p>
+                    </div>
+                    <div class="rows row3">
+                        <p>Favourites</p>
+                    </div>
+                    <div class="rows row4">
+                        <p>Settings</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-hero">
+                <form class="inp-container">
+                    <h1>User Profile</h1>
+                    <div class="LEFT-inp-container">
+                        <div class="inp-boxes">
+                            <label for="username">Username</label><br>
+                            <input type="text" id="username" name="username"><br>
+                        </div>
+                        <div class="inp-boxes">
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email"><br>
+                        </div>
+                        <div class="inp-boxes">
+                            <label for="gender">Gender</label><br>
+                            <select id="gender" name="gender">
+                                <option value="" selected disabled>Select a value</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <br>
+                        </div>
+                        <div class="inp-boxes">
+                            <label for="birthday">Birthday</label><br>
+                            <input type="date" id="birthday" name="birthday"><br>
+                        </div>
+                        <div class="inp-boxes">
+                            <label for="language">Language</label><br>
+                            <select id="language" name="language">
+                                <option value="" selected disabled>Select a value</option>
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                            </select>
+                            <br>
+                        </div>
+                        <div class="inp-boxes">
+                            <label for="country">Country</label><br>
+                            <select id="country" name="country">
+                                <option value="" selected disabled>Select a value</option>
+                                <option value="India">India</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="USA">USA</option>
+                            </select>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="RIGHT-inp-container">
+                        <div class="inp-boxes">
+                            <label for="current_password">Current Password</label><br>
+                            <input type="password" id="current_password" name="current_password"><br>
+                        </div>
+                        <div class="inp-boxes">
+                            <label for="New_password">New Password</label><br>
+                            <input type="password" id="New_password" name="New_password"><br>
+                        </div>
+                        <div class="inp-boxes">
+                            <label for="Confirm_password">Confirm Password</label><br>
+                            <input type="password" id="Confirm_password" name="Confirm_password"><br>
+                        </div>
+                        <div class="inp-boxes">
+                            <label for="" >Email Notification</label><br>
+                            <div class="chk-box-container" >
+                                <input type="checkbox" id="toggle" name="toggle" class="inp-chk-box" >
+                                <label for="toggle" class="toggle-lbl"></label>
+                            </div>
+                        </div>
+                        <div class="inp-boxes">
+                            <label for="private_account">Private Account</label><br>
+                            <div class="chk-box-container">
+                                <input type="checkbox" id="private_toggle" name="private_toggle" class="inp-chk-box">
+                                <label for="private_toggle" class="toggle-lbl"></label>
+                            </div>
+                        </div>
+                        <button type="submit">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
