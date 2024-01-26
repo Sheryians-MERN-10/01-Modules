@@ -1,0 +1,46 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+.main button{
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border: 1px solid #000;
+    position: relative;
+    transition: all ease 0.5s;
+}
+.main > button i{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    font-size: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+    transition: all ease 0.5s;
+
+}
+.main  button:hover{
+    background-color: #fff;
+    padding: 1rem 4rem;
+}
+.main button:hover i{
+    opacity: 1;
+}
+.main  button:nth-child(4){
+    background-color: red;
+}
