@@ -37,9 +37,11 @@
         </div>
         <div class="bottom-nav">
             <div>
+                <div id="cir-setting" class="cir2"></div>
                 <i class="ri-settings-2-line"></i>
             </div>
             <div>
+                <div id="cir-exit" class="cir2 "></div>
                 <i class="ri-login-box-line"></i>
             </div>
         </div>
@@ -99,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="chat-box">
+            <div class="chat-box active-chat-user">
                 <div class="chat-content">
                     <div class="img-box">
                         <img src="img/random-users/4.avif" alt="" srcset="">
@@ -193,11 +195,110 @@
             </div>
         </div>
 
-        <div class="main-container">
-            
+        <div id="main-container">
+            <div id="main-cont-content">
+                <div id="chatting-container">
+
+                    <div class="each-chat-box">
+                        <div>
+                            <img src="img/random-users/4.avif" alt="" srcset="">
+                        </div>
+                        <div class="msg-txt ">
+                            <p>Hey, how's it going? Haven't seen you lately.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="each-chat-box you">
+                        <div>
+                            <img src="img/random-users/4.avif" alt="" srcset="">
+                        </div>
+                        <div class="msg-txt ">
+                            <p>Yeah, been busy with work and stuff. You?</p>
+                        </div>
+                    </div>
+
+                    <div class="each-chat-box">
+                        <div>
+                            <img src="img/random-users/4.avif" alt="" srcset="">
+                        </div>
+                        <div class="msg-txt ">
+                            <p>Same here, deadlines are piling up. Stressful times.</p>
+                            <p>I'm thinking of a weekend getaway, maybe mountains?</p>
+                        </div>
+                    </div>
+
+                    <div class="each-chat-box you">
+                        <div>
+                            <img src="img/random-users/4.avif" alt="" srcset="">
+                        </div>
+                        <div class="msg-txt ">
+                            <p>Nice choice! Fresh air, nature's therapy. Count me in.</p>
+                        </div>
+                    </div>
+
+                    <div class="each-chat-box">
+                        <div>
+                            <img src="img/random-users/4.avif" alt="" srcset="">
+                        </div>
+                        <div class="msg-txt ">
+                            <p>Great! Let's plan it. Camping gear, hiking trails?</p>
+                        </div>
+                    </div>
+
+                    <div class="each-chat-box you">
+                        <div>
+                            <img src="img/random-users/4.avif" alt="" srcset="">
+                        </div>
+                        <div class="msg-txt ">
+                            <p>Sounds perfect. And a bonfire under the stars?</p>
+                        </div>
+                    </div>
+
+                    <div class="each-chat-box you">
+                        <div>
+                            <img src="img/random-users/4.avif" alt="" srcset="">
+                        </div>
+                        <div class="msg-txt ">
+                            <p>Agreed. Looking forward to it. Take care, friend.</p>
+                        </div>
+                    </div>
+
+                    <div class="each-chat-box ">
+                        <div>
+                            <img src="img/random-users/4.avif" alt="" srcset="">
+                        </div>
+                        <div class="msg-txt ">
+                            <p>Heard about the upcoming concert in the city?</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form id="write-msg-footer">
+                    <div id="write-msg-footer-contents">
+                        <div class="emoji-box">
+                            <i class="ri-emotion-laugh-fill"></i>
+                        </div>
+                        <div class="emoji-box-inp">
+                            <input type="text" name="" id="" placeholder="Your message here..." >
+                        </div>
+                        <div class="emoji-box">
+                            <input type="file" name="attach" id="attach">
+                            <label for="attach">
+                                <i class="ri-attachment-2"></i>
+                            </label>
+                            
+                        </div>
+                        <button type="submit" class="emoji-box send-btn"  >
+                            <i class="ri-send-plane-fill"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        
+
     </div>
 
 </body>

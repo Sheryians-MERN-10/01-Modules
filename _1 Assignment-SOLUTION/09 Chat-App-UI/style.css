@@ -85,9 +85,15 @@ nav{
     /* border: 1px solid lawngreen; */
     text-align: center;
     background-color: #2e3443;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vmax;
 }
 
-.bottom-nav div{
+
+.bottom-nav > div{
+    position: relative;
     width: 100%;
     height: 4vmax;
     
@@ -96,6 +102,29 @@ nav{
     align-items: center;
     cursor: pointer;
 }
+.bottom-nav > div > i{
+    z-index: 100;
+}
+
+.cir2{
+    position: absolute;
+    width: 0.2vmax;
+    height: 100%;
+    left: 0;
+    
+    transition: all 0.25s ease-in-out;
+}
+#cir-setting{
+    background-color: gray;
+}
+#cir-exit{
+    background-color: red;
+}
+
+.bottom-nav>div:hover .cir2{
+    width: 100%;
+}
+
 .bottom-nav div:last-child{
     background-color: rgb(187, 0, 0);
 }
@@ -161,6 +190,13 @@ nav{
     /* border: 1px solid gray; */
     border-bottom: 1px solid rgba(128, 128, 128, 0.21);
     margin: 0 5%;    
+}
+
+.active-chat-user{
+    background-color: aqua;
+    background-color: white;
+    /* width: 103%; */
+    
 }
 
 .chat-content{
@@ -298,6 +334,143 @@ nav{
     align-items: center;
     font-size: 1.4vmax;
     border-radius: 50%;
+    cursor: pointer;
     /* color: white; */
 }
 
+/* --  MAIN-CONTAINER & CHAT CONTENT MSG -- */
+#main-container{
+    height: 88%;
+    width: 100%;
+    /* background-color: tomato; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-cont-content{
+    height: 98%;
+    width: 95%;
+    /* background-color: blue; */
+}
+#chatting-container{
+    height: 82%;
+    width: 100%;
+    /* background-color: yellow; */
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 1vmax;
+    margin-bottom: 1vmax;
+}
+
+.each-chat-box{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    font-size: 0.9vmax;
+    font-family: sans-serif;
+    color: rgb(42, 42, 42);
+    margin: 1.5vmax auto;
+    /* border: 1px solid green; */
+}
+.each-chat-box > div{
+    margin-right: 1.2vmax;
+}
+.each-chat-box> div > img{
+    width: 3.2vmax;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px black;
+}
+.each-chat-box > .msg-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vmax;
+    max-width: 50%;
+}
+.each-chat-box > .msg-txt > p{
+    width: fit-content;
+    background-color: rgb(235, 235, 235);
+    padding: .6vmax 1vmax;
+    
+    border-radius: 1.2vmax;
+    line-height: 1.5vmax;
+}
+
+/* ------   YOOOOOOOOOOOOOOOOOU  ------- */
+.you{
+    justify-content: right;
+}
+.you > div:nth-child(1){
+    /* visibility: hidden; */
+    display: none;
+}
+
+.you > .msg-txt{
+    align-items: end;
+}
+.you > .msg-txt > p{
+    background-color: #fa4c4c;
+    color: white;
+}
+
+/* ------ WRITE MSG IN FOOTER INPUT  ---- */
+#write-msg-footer {
+    height: 12%;
+    width: 100%;
+    /* border:1px solid green; */
+    border-top: 1px solid rgba(128, 128, 128, 0.402);
+
+    display: flex;
+    align-items: center;
+}
+
+#write-msg-footer-contents{
+    height: 70%;
+    width: 100%;
+    /* background-color: lightblue; */
+    /* border:1px solid red; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emoji-box {
+    font-size: 1.6vmax;
+    padding: 0.5vmax;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+    color: rgb(57, 57, 57);
+}
+.emoji-box > label {
+    cursor: pointer;
+}
+.send-btn {
+    background-color: #fa4c4c;
+    color: white;
+    width:  3.2vmax;
+    height: 3.2vmax;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: none;
+    box-shadow: 1px 1px 5px black;
+}
+
+.emoji-box-inp > input{
+    padding: 0.9vmax 1.2vmax;
+    font-size: 1vmax;
+    border: none;
+    
+    border-radius: 2vmax;
+    width: 55vmax;
+    background-color: rgb(234, 234, 234);
+}
+
+input[type="file"]{
+    display: none;
+}
