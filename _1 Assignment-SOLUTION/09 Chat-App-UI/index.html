@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
@@ -33,6 +34,17 @@
                     <div class="cir"></div>
                     <i class="ri-notification-3-fill"></i>
                 </div>
+
+                <!-- only for phoneUI 👇 -->
+                <div class="bottom-nav-phoneUI">
+                    <div id="cir-setting" class="cir2"></div>
+                    <i class="ri-settings-2-line"></i>
+                </div>
+                <!-- only for phoneUI  -->
+            </div>
+            <div class="bottom-nav-phoneUI exit-container">
+                <div id="cir-exit" class="cir2 "></div>
+                <i class="ri-login-box-line"></i>
             </div>
         </div>
         <div class="bottom-nav">
@@ -54,6 +66,7 @@
                 <input type="text" placeholder="search...">
             </div>
         </div>
+
         <div id="chat-container">
 
             <div class="chat-box">
@@ -178,6 +191,8 @@
         </div>
     </div>
 
+    
+    <!--  RIGHT HERO - Duos Conversation  -->
     <div id="right-hero">
         <div id="nav-r-hero">
             <div class="content">
@@ -275,32 +290,32 @@
 
                 </div>
 
-                <form id="write-msg-footer">
-                    <div id="write-msg-footer-contents">
-                        <div class="emoji-box">
-                            <i class="ri-emotion-laugh-fill"></i>
-                        </div>
-                        <div class="emoji-box-inp">
-                            <input type="text" name="" id="" placeholder="Your message here..." >
-                        </div>
-                        <div class="emoji-box">
-                            <input type="file" name="attach" id="attach">
-                            <label for="attach">
-                                <i class="ri-attachment-2"></i>
-                            </label>
-                            
-                        </div>
-                        <button type="submit" class="emoji-box send-btn"  >
-                            <i class="ri-send-plane-fill"></i>
-                        </button>
-                    </div>
-                </form>
             </div>
+
+            <form id="write-msg-footer">
+                <div id="write-msg-footer-contents">
+                    <div class="emoji-box">
+                        <i class="ri-emotion-laugh-fill"></i>
+                    </div>
+                    <div class="emoji-box-inp">
+                        <input type="text" name="" id="" placeholder="Your message here...">
+                    </div>
+                    <div class="emoji-box">
+                        <input type="file" name="attach" id="attach">
+                        <label for="attach">
+                            <i class="ri-attachment-2"></i>
+                        </label>
+
+                    </div>
+                    <button type="submit" class="emoji-box send-btn">
+                        <i class="ri-send-plane-fill"></i>
+                    </button>
+                </div>
+            </form>
         </div>
 
 
     </div>
-
 </body>
 
 </html>
